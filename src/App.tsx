@@ -36,7 +36,7 @@ export function App() {
               },
               modes: {
                 push: {
-                  quantity: 8,
+                  quantity: 10,
                 },
                 repulse: {
                   distance: 200,
@@ -52,7 +52,7 @@ export function App() {
             },
             particles: {
               color: {
-                value: "#36944A",
+                value: "#2D7C3E",
               },
               links: {
                 color: "#2D7C3E",
@@ -100,9 +100,6 @@ export function App() {
         <div className="w-full h-full max-w-screen-xl mx-auto ">
         <header>
           <nav className="w-full z-20 h-[60px] bg-secondary-500 drop-shadow-xl fixed top-0 left-0 flex flex-row items-center justify-evenly">
-            <a href="#">
-              <img src={logoGreen} alt="logo" className="w-16 self-start" />
-            </a>
             <div className="flex-1">
               <ul className="flex flex-row items-center justify-end p-4">
                 <li>
@@ -116,7 +113,7 @@ export function App() {
                 <li>
                   <a
                     className="text-primary-500 uppercase font-bold hover:text-primary-50 transition-colors mx-6"
-                    href="https://github.com/kayooliveira"
+                    href="#"
                   >
                     <GithubLogo size="28" weight="fill" />
                   </a>
@@ -124,7 +121,7 @@ export function App() {
                 <li>
                   <a
                     className="text-primary-500 uppercase font-bold hover:text-primary-50 transition-colors mx-6"
-                    href="https://instagram.com/kayooliveira.dev"
+                    href="#"
                   >
                     <InstagramLogo size="28" weight="fill" />
                   </a>
@@ -141,7 +138,7 @@ export function App() {
             />
           <div className="flex-1 flex flex-col sm:absolute sm:right-10 items-center justify-center h-full p-4 text-center">
             <h1 className="text-[3rem] font-logo uppercase text-primary-500">
-              Kayo Oliveira
+              Allyson de Oliveira
             </h1>
             <h2 className="text-secondary-50 uppercase -my-2">
               Desenvolvedor Fullstack
