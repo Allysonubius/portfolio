@@ -33,9 +33,9 @@ export function Old() {
           backgroundImage: `url('${bglarge}')`,
         }}
       >
-        <img className="md:w-40 sm:w-30" src={logo} alt="KayoOliveira_Logo" />
+        <img className="md:w-50 sm:w-40" src={logo} alt="Allyson de Oliveira Logo" />
         <h1 className="text-[3rem] text-white font-logo uppercase">
-          Allyson de Oliveira
+          Allyson O. Brandão
         </h1>
         <a
           href="#inicio"
@@ -58,7 +58,7 @@ export function Old() {
             style={{}}
           >
             <div>
-              <img className="w-14" src={logo} alt="KayoOliveira_logo" />
+              <img className="w-14" src={logo} alt="Allyson de Oliveira Logo" />
             </div>
             <div>
               <ul className="flex font-logo text-white uppercase  flex-row justify-between items-center">

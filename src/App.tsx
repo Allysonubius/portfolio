@@ -3,6 +3,7 @@ import logoGreen from "./Assets/img/logo_green.svg";
 import avatar from "./Assets/img/avatar.png";
 import Particles from "react-tsparticles";
 import { GithubLogo, House, InstagramLogo } from "phosphor-react";
+import style from './app.module.css';
 export function App() {
 
 
@@ -36,10 +37,10 @@ export function App() {
               },
               modes: {
                 push: {
-                  quantity: 10,
+                  quantity: 50,
                 },
                 repulse: {
-                  distance: 200,
+                  distance: 500,
                   duration: 0.4,
                 },
                 grab: {
@@ -52,13 +53,13 @@ export function App() {
             },
             particles: {
               color: {
-                value: "#2D7C3E",
+                value: "#0392FC",
               },
               links: {
-                color: "#2D7C3E",
-                distance: 100,
+                color: "#36944A",
+                distance: 150,
                 enable: true,
-                opacity: 0.5,
+                opacity: 0.3,
                 width: 1,
               },
               collisions: {
@@ -70,9 +71,9 @@ export function App() {
                 outModes: {
                   default: "bounce",
                 },
-                random: false,
-                speed: 1,
-                straight: false,
+                random: true,
+                speed: 2,
+                straight: true,
               },
               number: {
                 density: {
@@ -82,17 +83,17 @@ export function App() {
                 value: 100,
               },
               opacity: {
-                value: 0.5,
+                value: 5,
               },
               shape: {
-                type: "circle",
+                type: "polygon",
               },
               size: {
                 value: { min: 1, max: 5 },
               },
               repulse: {
-                distance: 200,
-                duration: 0.4,
+                distance: 500,
+                duration: 1,
               },
             },
           }}
@@ -105,15 +106,7 @@ export function App() {
                 <li>
                   <a
                     className="text-primary-500 uppercase font-bold hover:text-primary-50 transition-colors mx-6"
-                    href="#"
-                  >
-                    <House size="28" weight="fill" />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    className="text-primary-500 uppercase font-bold hover:text-primary-50 transition-colors mx-6"
-                    href="#"
+                    href="https://github.com/Allysonubius" target="_blank"
                   >
                     <GithubLogo size="28" weight="fill" />
                   </a>
@@ -121,7 +114,7 @@ export function App() {
                 <li>
                   <a
                     className="text-primary-500 uppercase font-bold hover:text-primary-50 transition-colors mx-6"
-                    href="#"
+                    href="https://www.instagram.com/nubius3k/" target="_blank"
                   >
                     <InstagramLogo size="28" weight="fill" />
                   </a>
@@ -134,22 +127,22 @@ export function App() {
           <img
             src={avatar}
             alt="Avatar"
-            className="absolute -left-28  -bottom-10 hidden sm:block z-[999999]"
+            className="absolute -left-20  -bottom-0 hidden sm:block z-[999999]"
             />
           <div className="flex-1 flex flex-col sm:absolute sm:right-10 items-center justify-center h-full p-4 text-center">
             <h1 className="text-[3rem] font-logo uppercase text-primary-500">
-              Allyson de Oliveira
+              Allyson de O. Brandão
             </h1>
             <h2 className="text-secondary-50 uppercase -my-2">
-              Desenvolvedor Fullstack
+              Developer Mid Level Full Stack
             </h2>
 
-            <span className="text-secondary-200 text-center text-sm md:text-xl mt-4 z-[9999999]">
-              Desenvolvo aplicações limpas e intuitivas,
-              <br /> procuro sempre dar o meu melhor em cada projeto
-              <br />
-              desde o mais simples ao mais complexo.
+            <span className="text-secondary-100 text-center text-sm md:text-xl mt-4 z-[9999999]">
+              <span className={style.color}>Desenvolvo aplicações limpas e intuitivas,
+                <br/> procuro sempre dar o meu melhor em cada projeto
+                <br/> desde o mais simples ao mais complexo.
               </span>
+            </span>
           </div>
         </section>
         </div>
